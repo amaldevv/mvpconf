@@ -1,71 +1,1854 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MVPConf</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MVPConf : Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="~/images/favicon.ico" />
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/footer.css" rel="stylesheet">
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <!-- Slick slider -->
+    <link href="~/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="~/css/theme-color/orange-theme.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Montserrat for title -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">MVPConf</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+
+    <!-- Start Header -->
+    <header id="mu-hero" class="" role="banner">
+        <!-- Start menu  -->
+        <nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">MVPConf</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li><a href="#mu-hero">Home</a></li>
+                        <li><a href="#mu-about">About Us</a></li>
+                        <li><a href="#mu-schedule">Schedule</a></li>
+                        <li><a href="#mu-speakers">Speakers</a></li>
+                        <li><a href="#mu-pricing">Price</a></li>
+                        <li><a href="#mu-register">Register</a></li>
+                        <li><a href="#mu-sponsors">Sponsors</a></li>
+                        <li><a href="#mu-contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- End menu -->
+        <div class="mu-hero-overlay">
+            <div class="container">
+                <div class="mu-hero-area">
+                    <!-- Start hero featured area -->
+                    <div class="mu-hero-featured-area">
+                        <!-- Start center Logo -->
+                        <div class="mu-logo-area">
+                            <!-- text based logo -->
+                            <a class="mu-logo" href="#">MVPConf</a>
+                            <!-- image based logo -->
+                            <!-- <a class="mu-logo" href="#"><img src="~/images/logo.jpg" alt="logo img"></a> -->
+                        </div>
+                        <!-- End center Logo -->
+                        <div class="mu-hero-featured-content">
+                            <h1>HELLO! WELCOME TO MVPConf</h1>
+                            <h2>MVPConf - For Developers by Developers</h2>
+                            <p class="mu-event-date-line">February 2nd & 3rd, 2018, Hyderabad</p>
+                            <div class="mu-event-counter-area">
+                                <div id="mu-event-counter">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End hero featured area -->
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - MVPConf</p>
-        </footer>
-    </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start main content -->
+    <main role="main">
+        <!-- Start About -->
+        <section id="mu-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-about-area">
+                            <!-- Start Feature Content -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mu-about-left">
+                                        <img class="" src="~/images/about.jpg" alt="Men Speaker">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mu-about-right">
+                                        <h2>About The Conference</h2>
+                                        <p>MVPconf is an annual technology conference by Microsoft Most Valuable Professionals and Microsoft Regional Directors along with industry leading technology leaders and enthusiast. MVPConf is where you will learn about new trends, connect with industry experts, share your passion, and grow your skills. The program is created for developers by developers and cloud experts with conference talks and workshops covering the full stack of software development including Cloud, ITPro,DevOps and Security and highlighting emerging technologies like Machine Learning and IoT. Get inspired by our speakers who are software innovators and thought leaders from startups and enterprises across all different disciplines of software development!</p>
+                                        <p>We have full-day sessions & workshops on technical topics led by one of our world-renowned speakers. Each session is a hands-on learning session led by true experts in their field.</p>
+                                        <p>The result is a high-quality conference experience where a tremendous amount of attention and time has gone into having the best content on the most important topics presented by the leaders in our community, staged in an intimate environment needed to support as much learning and networking as possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Feature Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+        <!-- Start Video -->
+        <section id="mu-video">
+            <div class="mu-video-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-video-area">
+                                <!-- <h2>Watch Previous Event Video</h2> -->
+                                <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Video content -->
+            <div class="mu-video-content">
+                <div class="mu-video-iframe-area">
+                    <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/koFF_J9PFa4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- End Video content -->
+        </section>
+        <!-- End Video -->
+        <!-- Start Schedule  -->
+        <section id="mu-schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="colo-md-12">
+                        <div class="mu-schedule-area">
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Schedule Detail</h2>
+                                <p>At the end of the day it all boils down to developers writing code; it boils down to programming. In all the tracks, cool programmers will present intriguing programming cases, advanced tools to help you program more effectively and new techniques and ways of thinking about the programming discipline.</p>
+                                <br>
+                                <h3>Day 1</h3>
+                            </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+                            <div class="mu-schedule-content-area">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+                                    <li role="presentation" class="active"><a href="#track-one" aria-controls="track-one" role="tab" data-toggle="tab">Dev(.Net)</a></li>
+                                    <li role="presentation"><a href="#track-two" aria-controls="track-two" role="tab" data-toggle="tab">Dev(Open source)</a></li>
+                                    <li role="presentation"><a href="#track-three" aria-controls="track-three" role="tab" data-toggle="tab">ITPro/DevOps</a></li>
+                                    <li role="presentation"><a href="#track-four" aria-controls="track-four" role="tab" data-toggle="tab">Data, AL & MI </a></li>
+                                    <li role="presentation"><a href="#track-five" aria-controls="track-five" role="tab" data-toggle="tab">Business, Office and SharePoint</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content mu-schedule-content">
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="track-one">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, The state of modern app development with Microsoft Azure</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Azure App Service: the best place to host your .NET Apps!</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" target="_blank">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Build planet-scale, low latency apps with Azure Cosmos DB</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
 
-    @RenderSection("Scripts", required: false)
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Modern front-end web development in Visual Studio</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Containerized ASP.NET Core apps with Kubernetes</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Xamarin: The Future of Mobile App Development</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Entity Framework Core for Enterprise Applications</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-two">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote: How microsoft leading the open source revolution</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Python/Node and open source with VSCode</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Building Web APIs with ASP.NET Core 2.0</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Lets understand Asp.Net X and Asp.net Core X</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>JavaScript, API and Server Side - Know the Secrets of Success</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-three">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, How Microsoft went on to become IaaS Leader</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Building highly available, secure, and scalable services for the enterprise with Azure networking</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Migrating your IaaS infrastructure from ASM to ARM without downtime</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Tips and tricks with Azure Resource Manager</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Microsoft Azure virtual machine infrastructure innovation and automation</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Implement CI/CD pipeline with open source platforms like GIT, Jenkins & Azure Container Services</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Infrastructure as code - a road that lead to DevOps</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Enabling Digital Transformation with Microsoft Hybrid Cloud - Azure Stack</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-four">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, SQL/NoSQL/Big Data/ Advanced Analytics: Todays Landscape</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Deep dive into Azure IoT and IoT Edge</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Understanding big data on Azure - structured, unstructured and streaming</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Big data: Advanced analytics with Azure Data Lake Analytics and U-SQL</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Advanced - Deep Dive Into ADLA Using U-Sql</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Building an information bot with Microsoft Cognitive Services QnA Maker</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Azure SQL DB Features to Make Our Lives Easier</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Detailed look at Cortana Intelligence Suite</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-five">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote on Office / Exchange and Productivity</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Power BI: Transforming your data into actionable insight</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Sharepoint Migration : Tips and Tricks from practical experiences</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Latest innovations with Exchange & Office 365</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Developing Modern SharePoint Apps</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Developing applications with Microsoft Graph API</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Azure Active Directory: From Appliaction stand point</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Mastering CLI/CloudShell/Powershell</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Schedule -->
+        <!-- Start Schedule  -->
+        <section id="mu-schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="colo-md-12">
+                        <div class="mu-schedule-area">
+
+                            <div class="mu-title-area">
+
+                                <h3>Day 2</h3>
+                            </div>
+
+
+                            <div class="mu-schedule-content-area">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+                                    <li role="presentation" class="active"><a href="#track-one" aria-controls="track-one" role="tab" data-toggle="tab">Dev(.Net)</a></li>
+                                    <li role="presentation"><a href="#track-two" aria-controls="track-two" role="tab" data-toggle="tab">Dev(Open source)</a></li>
+                                    <li role="presentation"><a href="#track-three" aria-controls="track-three" role="tab" data-toggle="tab">ITPro/DevOps</a></li>
+                                    <li role="presentation"><a href="#track-four" aria-controls="track-four" role="tab" data-toggle="tab">Data, AL & MI </a></li>
+                                    <li role="presentation"><a href="#track-five" aria-controls="track-five" role="tab" data-toggle="tab">Business, Office and SharePoint</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content mu-schedule-content">
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="track-one">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, The state of modern app development with Microsoft Azure</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Azure App Service: the best place to host your .NET Apps!</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Build planet-scale, low latency apps with Azure Cosmos DB</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Modern front-end web development in Visual Studio</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Containerized ASP.NET Core apps with Kubernetes</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Xamarin: The Future of Mobile App Development</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Entity Framework Core for Enterprise Applications</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-two">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote: How microsoft leading the open source revolution</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Python/Node and open source with VSCode</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Building Web APIs with ASP.NET Core 2.0</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Lets understand Asp.Net X and Asp.net Core X</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>JavaScript, API and Server Side - Know the Secrets of Success</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Angular 2x / Typesciprt 101</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-three">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, How Microsoft went on to become IaaS Leader</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Building highly available, secure, and scalable services for the enterprise with Azure networking</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Migrating your IaaS infrastructure from ASM to ARM without downtime</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Tips and tricks with Azure Resource Manager</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Microsoft Azure virtual machine infrastructure innovation and automation</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Implement CI/CD pipeline with open source platforms like GIT, Jenkins & Azure Container Services</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Infrastructure as code - a road that lead to DevOps</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Enabling Digital Transformation with Microsoft Hybrid Cloud - Azure Stack</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-four">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote, SQL/NoSQL/Big Data/ Advanced Analytics: Todays Landscape</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Deep dive into Azure IoT and IoT Edge</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Understanding big data on Azure - structured, unstructured and streaming</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Big data: Advanced analytics with Azure Data Lake Analytics and U-SQL</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Advanced - Deep Dive Into ADLA Using U-Sql</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Building an information bot with Microsoft Cognitive Services QnA Maker</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Azure SQL DB Features to Make Our Lives Easier</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Detailed look at Cortana Intelligence Suite</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="track-five">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">9.00 AM - 9.45 AM</p>
+                                                    <h3>Keynote on Office / Exchange and Productivity</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">10.00 AM - 10.45 AM</p>
+                                                    <h3>Power BI: Transforming your data into actionable insight</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">10.45 AM - 11.00 AM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">11.00 AM - 11.45 AM</p>
+                                                    <h3>Sharepoint Migration : Tips and Tricks from practical experiences</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Latest innovations with Exchange & Office 365</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">1.00 PM - 2.00 PM</p>
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-2.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">12.00 AM - 12.45 AM</p>
+                                                    <h3>Developing Modern SharePoint Apps</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">03.00 PM -3.45 PM</p>
+                                                    <h3>Developing applications with Microsoft Graph API</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">03.45 PM - 04.00 PM</p>
+                                                    <h3>Break</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">04.00 PM - 04.45 PM</p>
+                                                    <h3>Azure Active Directory: From Appliaction stand point</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <img src="~/images/speaker-3.jpg" alt="event speaker">
+                                                    <p class="mu-event-time">05.00 PM - 05.45 PM</p>
+                                                    <h3>Mastering CLI/CloudShell/Powershell</h3>
+                                                    <a href="https://goo.gl/forms/rc7Xfoy24aR2ODe93" aria-controls="track-five" role="tab" data-toggle="tab">Nominate yourself</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <p class="mu-event-time">05.45 PM - 06.00 PM</p>
+                                                    <h3>Conclusion</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Schedule -->
+        <!-- Start Speakers -->
+        <section id="mu-speakers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-speakers-area">
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Our Speakers</h2>
+                                <p>Our speakers are very familiar faces to you, you must have seen/heard them talking on the latest and greatest on the new innovations on Dev/IT in the local community meetups or in the premier conferences. We have assembled some of the amazing expert speakers from the elite MVPs and Microsoft RD community.</p>
+                            </div>
+                            <!-- Start Speakers Content -->
+                            <div class="mu-speakers-content">
+                                <div class="mu-speakers-slider">
+                                    <!-- Start single speaker -->
+                                    <div class="mu-single-speakers">
+                                        <img src="~/images/speakers/anoop.jpg" alt="speaker img">
+                                        <div class="mu-single-speakers-info">
+                                            <h3>Anoop Chandran Nair</h3>
+                                            <p>Enterprise Mobility Expert</p>
+                                            <ul class="mu-single-speakers-social">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End single speaker -->
+                                    <!-- Start single speaker -->
+                                    <div class="mu-single-speakers">
+                                        <img src="~/images/speakers/vikram.jpg" alt="speaker img">
+                                        <div class="mu-single-speakers-info">
+                                            <h3>Vikram Pendse</h3>
+                                            <p>Azure Expert</p>
+                                            <ul class="mu-single-speakers-social">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End single speaker -->
+                                    <!-- Start single speaker -->
+                                    <div class="mu-single-speakers">
+                                        <img src="~/images/speakers/dhami.jpg" alt="speaker img">
+                                        <div class="mu-single-speakers-info">
+                                            <h3>Deepak Singh Dhami</h3>
+                                            <p>Cloud and Datacenter Management Expert</p>
+                                            <ul class="mu-single-speakers-social">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End single speaker -->
+                                    <!-- Start single speaker -->
+                                    <div class="mu-single-speakers">
+                                        <img src="~/images/speakers/rohit.jpg" alt="speaker img">
+                                        <div class="mu-single-speakers-info">
+                                            <h3>Rohit Srivastava</h3>
+                                            <p>Cloud and Datacenter Management Expert</p>
+                                            <ul class="mu-single-speakers-social">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End single speaker -->
+                                    <!-- Start single speaker -->
+                                    <div class="mu-single-speakers">
+                                        <img src="~/images/speakers/sohoni.jpg" alt="speaker img">
+                                        <div class="mu-single-speakers-info">
+                                            <h3>Subodh Sohoni</h3>
+                                            <p>DevOps Expert</p>
+                                            <ul class="mu-single-speakers-social">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End single speaker -->
+                                </div>
+                            </div>
+                            <!-- End Speakers Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Speakers -->
+        <!-- Start Venue -->
+        <section id="mu-venue">
+            <div class="mu-venue-area">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mu-venue-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121819.20383521647!2d78.34193650670714!3d17.418979012187563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91366e78651b%3A0xc4a6ba856fea983f!2sMicrosoft+India+Private+Limited!5e0!3m2!1sen!2sin!4v1506937414478" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mu-venue-address">
+                            <img src="~/images/microsoft-idc-building.jpg" alt="Brand Logo">
+                            <h2 class="fa fa-chevron-right" aria-hidden="true"><i>Venue</i></h2>
+                            <h3>Microsoft India Development Center,</h3>
+                            <h4>Microsoft Campus, Gachibowli, Hyderabad, Telangana 500032</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Venue -->
+        <!-- Start Pricing  -->
+        <section id="mu-pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-pricing-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Pricing plans</h2>
+                                <!-- <p>
+                                    We tried our best to keep the event as free as possible, however we had to charge for few of the key aspects like food and hospitality an dhence the below price.
+                                </p> -->
+                            </div>
+
+                            <div class="mu-pricing-conten">
+                                <div class="row">
+
+                                    <!-- single price item -->
+                                    <!-- <div class="col-md-4">
+                                        <div class="mu-single-price">
+
+                                            <div class="mu-single-price-head">
+                                                <span class="mu-currency">₹</span>
+                                                <span class="mu-rate">0</span>
+                                                <span class="mu-time">/all day</span>
+                                            </div>
+                                            <h3 class="mu-price-title">BASIC</h3>
+                                            <ul>
+                                                <li>Basic Class Ticket</li>
+                                                <li>Access to all sessions</li>
+                                                <li>Free Lunch</li>
+                                                <li>Only for College Students (Need to bring College ID Cards)</li>
+                                            </ul>
+                                            <a class="mu-register-btn" href="#"> Register Now</a>
+                                        </div>
+                                    </div> -->
+                                    <!-- / single price item -->
+                                    <!-- single price item -->
+                                    <!-- <div class="col-md-4">
+                                        <div class="mu-single-price mu-popular-price">
+                                            <span class="mu-price-tag">Popular</span>
+                                            <div class="mu-single-price-head">
+                                                <span class="mu-currency">₹</span>
+                                                <span class="mu-rate">799</span>
+                                                <span class="mu-time">/all day</span>
+                                            </div>
+                                            <h3 class="mu-price-title">STANDARD</h3>
+                                            <ul>
+                                                <li>Basic Class Ticket</li>
+                                                <li>Access to all sessions</li>
+                                                <li>Free Lunch</li>
+                                            </ul>
+                                            <a class="mu-register-btn" href="#"> Register Now</a>
+                                        </div>
+                                    </div> -->
+                                    <!-- / single price item -->
+                                    <!-- single price item -->
+                                    <div class="col-md-4">
+                                        <div class="mu-single-price">
+                                            <div class="mu-single-price-head">
+                                                <span class="mu-currency">₹</span>
+                                                <span class="mu-rate">Will be announced shortly</span>
+                                                <span class="mu-time">/all day</span>
+                                            </div>
+                                            <h3 class="mu-price-title">Early birds</h3>
+                                            <ul>
+                                                <li>Basic Class Ticket</li>
+                                                <li>Access to all sessions</li>
+                                                <li>Includes Refreshment and Food</li>
+                                            </ul>
+                                            <a class="mu-register-btn" href="#"> Register Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- / single price item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Pricing -->
+        <!-- Start Register  -->
+        <section id="mu-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-register-area">
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Register Form</h2>
+                                <p>I'm sure you will have few questions, please find our frequently asked questions below.</p>
+                            </div>
+                            <div class="mu-register-content">
+                                <form class="mu-register-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Your Full Name" id="name" name="name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Your Phone Number" id="telephone" name="telephone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <div class="form-group">
+                                                <select class="form-control" name="ticket" id="ticket">
+                                                    <option value="0">Basic ($12)</option>
+                                                    <option value="1">Standard ($22)</option>
+                                                    <option value="2">Premium ($45)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Register -->
+        <!-- Start FAQ -->
+        <section id="mu-faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-faq-area">
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">FAQ</h2>
+                                <p>Below are the frequentyly asked questions</p>
+                            </div>
+                            <div class="mu-faq-content">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> I have a ticket, but am unable to attend. What can I do?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> How do I get a refund?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> How do I transfer my ticket to a co-worker or future event?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Can I access the speaker presentations / slide deck uploads prior to the conference??
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                We require speakers to upload their presentations prior to the conference (please note: workshop presentations are not required to be uploaded). With that being said, most of the slide decks should be available and ready to view during the conference and can be accessed via a URL provided at the event. There is also a direct button to the slide decks on our event app. If you do not see a particular slide deck that you are looking for, please email contact@themvpconference.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Can I purchase using a purchase order (PO)?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Our team needs to register individually. Can we still get a group discount?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> I didn't receive my event ticket. What should I do?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> What do I need to check in at registration on-site at the venue??
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                Once your registration is complete, all you need to do is bring either your printed confirmation or an ID and we will print you an attendee badge at the registration desk. Simple as that!
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span>Is there a dress code?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                Business casual is appropriate for this type of event.
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Are meals provided?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Can my company sponsor the event?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Can I contact you by phone or mail?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div> <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> How do I unsubscribe from your email list?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Who are MVPs?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                Microsoft Most Valuable Professionals, or MVPs, are technology experts who passionately share their knowledge with the community. They are always on the "bleeding edge" and have an unstoppable urge to get their hands on new, exciting technologies. They have very deep knowledge of Microsoft products and services, while also being able to bring together diverse platforms, products and solutions, to solve real world problems. MVPs make up a global community of over 4,000 technical experts and community leaders across 90 countries and are driven by their passion, community spirit, and quest for knowledge. Above all and in addition to their amazing technical abilities, MVPs are always willing to help others - that's what sets them apart.
+                                                For more info <a src='https://mvp.microsoft.com/en-us/Overview'>click here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    <span class="fa fa-angle-up"></span> Who are Microsoft RDs
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                The Regional Director Program provides Microsoft leaders with the customer insights and real-world voices it needs to continue empowering developers and IT professionals with the world's most innovative and impactful tools, services, and solutions.
+                                                Established in 1993, the program consists of 150 of the world's top technology visionaries chosen specifically for their proven cross-platform expertise, community leadership, and commitment to business results. You will typically find Regional Directors keynoting at top industry events, leading community groups and local initiatives, running technology-focused companies, or consulting on and implementing the latest breakthrough within a multinational corporation.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ -->
+        <!-- Start Sponsors -->
+        <section id="mu-sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-sponsors-area">
+                            @RenderBody()
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Our Sponsors</h2>
+                                <p>We are thankful for the sponsorers of this event with their support and encouragement.</p>
+                                <p>Interested in becoming a sponsor of MVP conference? Multiple sponsorship opportunities are available. <a href="emailto:contact@themvpconference.com">Write to us <text>@@contact@@themvpconference.com</text> </a></a></p>
+                            </div>
+
+                            <!-- Start spnonsors brand logo -->
+                            <div class="mu-sponsors-content">
+                                <h3>Platinum Sponsors</h3>
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsors/microsoft.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Gold Sponsors</h3>
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsors/microsoft.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Silver Sponsors</h3>
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsors/microsoft.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Main Event Reception Sponsors</h3>
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsors/microsoft.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Event Hosts</h3>
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsors/microsoft.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-2.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-3.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-4.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="~/images/sponsor-logo-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End spnonsors brand logo -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Sponsors -->
+        <!-- Start Contact -->
+        <section id="mu-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-contact-area">
+                            <div class="mu-title-area">
+                                <h2 class="mu-heading-title">Contact Us</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                            </div>
+                            <!-- Start Contact Content -->
+                            <div class="mu-contact-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mu-contact-form-area">
+                                            <div id="form-messages"></div>
+                                            <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                                                </div>
+                                                <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Contact Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+    </main>
+
+    <!-- End main content -->
+    <!--header-->
+    <!-- Start footer -->
+    <footer id="mu-footer" role="contentinfo">
+        <div class="container">
+            <div class="mu-footer-area">
+                <div class="mu-footer-top">
+                    <div class="mu-social-media">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="mu-footer-bottom">
+                    <p class="mu-copy-right">&copy; MVPConf Copyright. All right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="~/js/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="~/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="~/js/app.js"></script>
+
+
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="~/js/custom.js"></script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=59d270f520f64600117ce96a&product=unknown' async='async'></script>
+
+
+
 </body>
 </html>
