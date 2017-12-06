@@ -206,7 +206,17 @@
 
 
 
+    var div = document.createElement("div");
+    document.getElementsByTagName('body')[0].appendChild(div);
+    div.outerHTML = "<div id='botDiv' class='pull-right' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 250px; position:fixed; cursor: pointer;'></div><iframe width='250px' height='300px' src='https://webchat.botframework.com/embed/mvpconfbot_HFDddVnjHWr?s=sgfp1RLelXk.cwA.4u8.zGpyx65YNM6UyQaRJQW3TL6HghkDz4dn8l248NtRQBI'></iframe></div>";
 
+    document.querySelector('body').addEventListener('click', function (e) {
+        e.target.matches = e.target.matches || e.target.msMatchesSelector;
+        if (e.target.matches('#botTitleBar')) {
+            var botDiv = document.querySelector('#botDiv');
+            botDiv.style.height = botDiv.style.height == '300px' ? '38px' : '300px';
+        };
+    });
 
 	
 	
